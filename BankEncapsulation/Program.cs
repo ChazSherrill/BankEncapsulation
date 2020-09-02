@@ -13,6 +13,11 @@ namespace BankEncapsulation
             Console.WriteLine(CLSAccount.getBalance());
 
             CLSAccount.Withdraw(200);
+
+            var CLSAAccountInformation = new PersonalInformation();
+
+            CLSAAccountInformation.PrintPersonalInfo();
+
         }
     }
 }

@@ -10,18 +10,6 @@ namespace BankEncapsulation
             _balance = initialDeposit;
         }
 
-        public double Balance
-        {
-            get
-            {
-                return _balance;
-            }
-            set
-            {
-                Balance = value;
-            }
-        }
-
         public void deposit(double moneyIn)
         {
             _balance += moneyIn;
@@ -29,13 +17,13 @@ namespace BankEncapsulation
 
         public double getBalance()
         {
-            return Balance;
+            return _balance;
         }
 
         public void Withdraw(double moneyOut)
         {
             _balance -= moneyOut;
-            Console.WriteLine(Balance);
+            Console.WriteLine(_balance);
         }
         
     }
